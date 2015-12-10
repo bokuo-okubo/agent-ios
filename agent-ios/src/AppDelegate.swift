@@ -14,16 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject:AnyObject]?) -> Bool {
-
         self.window = UIWindow.init(frame: UIScreen.mainScreen().bounds)
-
-        let myViewController = UIViewController()
-        myViewController.view.backgroundColor = UIColor.blueColor() //debug
-
+        let myViewController = CSStubRootViewController()
         self.window!.rootViewController = myViewController
+        self.window!.backgroundColor = UIColor.whiteColor()
         self.window!.makeKeyAndVisible()
-
-        //NSURLProtocol.registerClass()
         return true
     }
 

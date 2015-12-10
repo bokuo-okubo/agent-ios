@@ -28,28 +28,28 @@ class CSURLProtocol: NSURLProtocol {
 
     /* instance methods */
     override func startLoading() {
-        if let reqURL = self.request.URL {
-            p("requestURL:",reqURL)
-
+//        if let reqURL = self.request.URL {
+//            p("requestURL:",reqURL)
+//
 //            let path: String? = reqURL.path
-
-            // design PseudoServer ( NSURLRepuest ) -> NSHTTPURLResponse
+//
+//            // design PseudoServer ( NSURLRepuest ) -> NSHTTPURLResponse
 //            let res: PseudoServer.Response = PseudoServer.query(path!)
-
+//
 //            p(res.header) // for debug
 //            p(res.payload) // for debug
 //            let data = res.payload.joinWithSeparator("").dataUsingEncoding(NSUTF8StringEncoding)
-            let data = "hogehoge".dataUsingEncoding(NSUTF8StringEncoding)
-            // TODO : migrate to my response.
-            let response = NSHTTPURLResponse(URL: reqURL,
-                statusCode: 200,
-                HTTPVersion: "1.1",
-                headerFields: ["Access-Control-Allow-Origin":"*"]) as NSURLResponse?
-            self.client?.URLProtocol(self,
-                didReceiveResponse: response!,
-                cacheStoragePolicy: NSURLCacheStoragePolicy.NotAllowed)
-            self.client?.URLProtocol(self, didLoadData: data!)
-        }
+//
+//            // TODO : migrate to my response.
+//            let response = NSHTTPURLResponse(URL: reqURL,
+//                statusCode: 200,
+//                HTTPVersion: "1.1",
+//                headerFields: ["Access-Control-Allow-Origin":"*"]) as NSURLResponse?
+//            self.client?.URLProtocol(self,
+//                didReceiveResponse: response!,
+//                cacheStoragePolicy: NSURLCacheStoragePolicy.NotAllowed)
+//            self.client?.URLProtocol(self, didLoadData: data!)
+//        }
         self.client?.URLProtocolDidFinishLoading(self)
     }
 

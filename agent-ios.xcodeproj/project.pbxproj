@@ -12,11 +12,12 @@
 		782822FE1C192E2000124246 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 782822FC1C192E2000124246 /* LaunchScreen.storyboard */; };
 		782823091C192E2000124246 /* agent_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782823081C192E2000124246 /* agent_iosTests.swift */; };
 		782823141C192E2000124246 /* agent_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782823131C192E2000124246 /* agent_iosUITests.swift */; };
+		7883131C1C195F3700DF18EB /* web in Resources */ = {isa = PBXBuildFile; fileRef = 7883131B1C195F3700DF18EB /* web */; };
 		78A23C251C193CBE0052FA8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A23C1D1C193CBE0052FA8F /* AppDelegate.swift */; };
 		78A23C261C193CBE0052FA8F /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A23C211C193CBE0052FA8F /* Server.swift */; };
 		78A23C271C193CBE0052FA8F /* PseudoServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A23C221C193CBE0052FA8F /* PseudoServer.swift */; };
 		78A23C281C193CBE0052FA8F /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A23C231C193CBE0052FA8F /* Route.swift */; };
-		78A23C291C193CBE0052FA8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A23C241C193CBE0052FA8F /* ViewController.swift */; };
+		78A23C291C193CBE0052FA8F /* CSStubRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A23C241C193CBE0052FA8F /* CSStubRootViewController.swift */; };
 		78C695FF1C1940C5008F4625 /* CSURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C695FE1C1940C5008F4625 /* CSURLProtocol.swift */; };
 		78C696021C19417A008F4625 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C696001C19417A008F4625 /* Config.swift */; };
 		78C696031C19417A008F4625 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C696011C19417A008F4625 /* Utils.swift */; };
@@ -55,11 +56,12 @@
 		7828230F1C192E2000124246 /* agent-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "agent-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		782823131C192E2000124246 /* agent_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = agent_iosUITests.swift; sourceTree = "<group>"; };
 		782823151C192E2000124246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7883131B1C195F3700DF18EB /* web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = web; sourceTree = "<group>"; };
 		78A23C1D1C193CBE0052FA8F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78A23C211C193CBE0052FA8F /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		78A23C221C193CBE0052FA8F /* PseudoServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PseudoServer.swift; sourceTree = "<group>"; };
 		78A23C231C193CBE0052FA8F /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
-		78A23C241C193CBE0052FA8F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		78A23C241C193CBE0052FA8F /* CSStubRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSStubRootViewController.swift; sourceTree = "<group>"; };
 		78C695FE1C1940C5008F4625 /* CSURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSURLProtocol.swift; sourceTree = "<group>"; };
 		78C696001C19417A008F4625 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		78C696011C19417A008F4625 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				78A23C1C1C193CBE0052FA8F /* src */,
+				7883131B1C195F3700DF18EB /* web */,
 				782822FA1C192E2000124246 /* Assets.xcassets */,
 				782822FC1C192E2000124246 /* LaunchScreen.storyboard */,
 				782822FF1C192E2000124246 /* Info.plist */,
@@ -170,7 +173,7 @@
 				78C696011C19417A008F4625 /* Utils.swift */,
 				78A23C1D1C193CBE0052FA8F /* AppDelegate.swift */,
 				78C695FE1C1940C5008F4625 /* CSURLProtocol.swift */,
-				78A23C241C193CBE0052FA8F /* ViewController.swift */,
+				78A23C241C193CBE0052FA8F /* CSStubRootViewController.swift */,
 				78A23C1E1C193CBE0052FA8F /* lib */,
 			);
 			path = src;
@@ -327,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7883131C1C195F3700DF18EB /* web in Resources */,
 				782822FE1C192E2000124246 /* LaunchScreen.storyboard in Resources */,
 				782822FB1C192E2000124246 /* Assets.xcassets in Resources */,
 			);
@@ -476,7 +480,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78A23C291C193CBE0052FA8F /* ViewController.swift in Sources */,
+				78A23C291C193CBE0052FA8F /* CSStubRootViewController.swift in Sources */,
 				78A23C271C193CBE0052FA8F /* PseudoServer.swift in Sources */,
 				78A23C281C193CBE0052FA8F /* Route.swift in Sources */,
 				78C696021C19417A008F4625 /* Config.swift in Sources */,
