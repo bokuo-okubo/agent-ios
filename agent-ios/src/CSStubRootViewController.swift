@@ -21,6 +21,7 @@ class CSStubRootViewController: UIViewController {
         NSURLProtocol.registerClass(CSURLProtocol)
 
         webView.loadRequest(NSURLRequest(URL: NSURL(fileURLWithPath: path))) // TODO: リソースが取得できなかった時のエラーハンドリング
+        
         self.view.addSubview(webView)
     }
 
