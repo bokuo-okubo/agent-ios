@@ -9,7 +9,7 @@ separator() {
 
 invoke() {
     echo "$1"
-    eval "$1"
+    eval "$1" || exit
     separator
 }
 
