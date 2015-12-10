@@ -13,8 +13,7 @@ class CSStubRootViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let frameSizeRect = UIScreen.mainScreen().bounds
-        let webView = UIWebView.init(frame: frameSizeRect)
+        let webView = UIWebView.init(frame: culcAvailableViewRect())
 
         // ローカルのファイルのフルパスを取得する
         let path = self.setupBundleFilePath(Config())
@@ -25,18 +24,27 @@ class CSStubRootViewController: UIViewController {
         self.view.addSubview(webView)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    // override func didReceiveMemoryWarning() {super.didReceiveMemoryWarning()}
 
     /* private methods */
     private func setupBundleFilePath(config: Config) -> String {
-        print(config)
         let path : String = NSBundle.mainBundle().pathForResource(config.localEntoryFile,
                                                                   ofType: "html",
                                                                   inDirectory: config.localDirName)!
         return path
+    }
+
+    private func culcAvailableViewRect() -> CGRect {
+
+        let frameSizeRect = UIScreen.mainScreen().bounds
+
+        let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
+
+        let availableViewHeight = CGRect.init(x: 0,
+                                              y: statusBarHeight,
+                                              width: frameSizeRect.width,
+                                              height: frameSizeRect.height - statusBarHeight)
+        return availableViewHeight
     }
 
 }
