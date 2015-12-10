@@ -1,0 +1,22 @@
+PODS:
+  - Dollar (4.0.1)
+  - Nimble (3.0.0)
+  - Quick (0.8.0)
+  - Realm (0.96.3):
+    - Realm/Headers (= 0.96.3)
+  - Realm/Headers (0.96.3)
+
+DEPENDENCIES:
+  - Dollar
+  - Nimble (= 3.0.0)
+  - Quick (~> 0.8.0)
+  - Realm
+  - Realm/Headers
+
+SPEC CHECKSUMS:
+  Dollar: a058e2659e0d3261307c12630dbc2fd8e32f80bf
+  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
+  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
+  Realm: 145d3cdf78a03aee71bde5381ad7e542bd541720
+
+COCOAPODS: 0.39.0
