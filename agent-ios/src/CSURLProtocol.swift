@@ -31,15 +31,14 @@ class CSURLProtocol: NSURLProtocol {
         if let reqURL = self.request.URL {
             p("requestURL:",reqURL)
 
-//            let path: String? = reqURL.path
+            let path: String? = reqURL.path
 
-            // design PseudoServer ( NSURLRepuest ) -> NSHTTPURLResponse
-//            let res: PseudoServer.Response = PseudoServer.query(path!)
+            let res: PseudoServer.Response = PseudoServer.query(path!)
 
-//            p(res.header) // for debug
-//            p(res.payload) // for debug
-//            let data = res.payload.joinWithSeparator("").dataUsingEncoding(NSUTF8StringEncoding)
-            let data = "hogehoge".dataUsingEncoding(NSUTF8StringEncoding)
+            p(res.header) // for debug
+            p(res.payload) // for debug
+            let data = res.payload.joinWithSeparator("").dataUsingEncoding(NSUTF8StringEncoding)
+
             // TODO : migrate to my response.
             let response = NSHTTPURLResponse(URL: reqURL,
                 statusCode: 200,
