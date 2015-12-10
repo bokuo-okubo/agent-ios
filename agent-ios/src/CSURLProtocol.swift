@@ -29,14 +29,14 @@ class CSURLProtocol: NSURLProtocol {
     /* instance methods */
     override func startLoading() {
         if let reqURL = self.request.URL {
-            p("requestURL:",reqURL)
+            print("in CSURLProtocol | requestURL:", reqURL)
 
             let path: String? = reqURL.path
 
             let res: PseudoServer.Response = PseudoServer.query(path!)
 
-            p(res.header) // for debug
-            p(res.payload) // for debug
+            print("in CSURLProtocol | response Header:", res.header)// for debug
+            print("in CSURLProtocol | response Payload:", res.payload) // for debug
             let data = res.payload.joinWithSeparator("").dataUsingEncoding(NSUTF8StringEncoding)
 
             // TODO : migrate to my response.

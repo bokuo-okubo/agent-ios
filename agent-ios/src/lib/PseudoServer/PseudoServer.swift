@@ -16,7 +16,9 @@ struct PseudoServer {
     *  ----------------------------------------------- */
     static let ROUTE: RouteMap = [
         "/foo": [Acts.session, Acts.auth],
-        "/bar": [Acts.session ]
+        "/bar": [Acts.session ],
+        "/api/v1/entries": [Acts.debugger],
+        "/api/v1/entries/:hoge": [Acts.hoge]
     ]
 
     static func query(path:String) -> Response {
@@ -46,6 +48,12 @@ struct PseudoServer {
         }
 
         static let auth: Responsible = { req, res -> Response in
+            return res
+        }
+
+        static let debugger: Responsible = { req, res -> Response in
+            res.header("headerだよ")
+            res.payload("this is PseudoServer!!!!!!!!")
             return res
         }
     }
@@ -162,7 +170,7 @@ struct PseudoServer {
         }
 
         func call(req: Request,res: Response) -> Response {
-            p("[Request]:", req.debugDescription)
+            print("in PseudoServer | Request:", req)
             return self.router.handle(req, res: res)
         }
     }
