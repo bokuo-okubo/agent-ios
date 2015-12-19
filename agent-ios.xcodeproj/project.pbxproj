@@ -242,6 +242,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7828231B1C192E2000124246 /* Build configuration list for PBXNativeTarget "agent-iosTests" */;
 			buildPhases = (
+				789EF3AF1C25696B00D46D9D /* Run SwiftLint */,
 				9254F1D54B5A09EFA91A7E86 /* Check Pods Manifest.lock */,
 				782823001C192E2000124246 /* Sources */,
 				782823011C192E2000124246 /* Frameworks */,
@@ -397,6 +398,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-agent-ios/Pods-agent-ios-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		789EF3AF1C25696B00D46D9D /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 		79DBDE979D1616A6DC0F2214 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
