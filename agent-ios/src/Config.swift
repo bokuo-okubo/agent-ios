@@ -15,13 +15,13 @@ struct Config {
     * - Dictionary? 型指定しないとあかん気がする
     * - Yaml? Json? どちらにしてもスキーマを定義しないとダメ？
     */
-    
+
     // this config struct is TEMPORARY
-    let hostName : String = "help.creativesurvey.com"
+    let hostName = "help.creativesurvey.com"
 
-    let jsCodeLocation : String = "http://localhost:8081/index.ios.bundle?platform=ios&dev=true"
+    let jsCodeLocation = "http://localhost:8081/index.ios.bundle?platform=ios&dev=true"
 
-    let moduleName : String = "ReactNativeWithPods"
+    let moduleName = "ReactNativeWithPods"
 
     let localEntoryFile = "index"
 

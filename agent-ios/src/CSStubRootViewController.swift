@@ -21,7 +21,7 @@ class CSStubRootViewController: UIViewController {
         NSURLProtocol.registerClass(CSURLProtocol)
 
         webView.loadRequest(NSURLRequest(URL: NSURL(fileURLWithPath: path))) // TODO: リソースが取得できなかった時のエラーハンドリング
-        
+
         self.view.addSubview(webView)
     }
 
@@ -29,7 +29,7 @@ class CSStubRootViewController: UIViewController {
 
     /* private methods */
     private func setupBundleFilePath(config: Config) -> String {
-        let path : String = NSBundle.mainBundle().pathForResource(config.localEntoryFile,
+        let path: String = NSBundle.mainBundle().pathForResource(config.localEntoryFile,
                                                                   ofType: "html",
                                                                   inDirectory: config.localDirName)!
         return path
@@ -49,4 +49,3 @@ class CSStubRootViewController: UIViewController {
     }
 
 }
-

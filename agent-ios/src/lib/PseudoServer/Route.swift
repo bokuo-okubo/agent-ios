@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum http {
+enum Http {
     case GET
     case POST
     case PUT
@@ -18,5 +18,3 @@ enum http {
     case TRACE
     case CONNECT
 }
-
-

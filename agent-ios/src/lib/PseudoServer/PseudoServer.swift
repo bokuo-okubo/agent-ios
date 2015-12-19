@@ -18,10 +18,10 @@ struct PseudoServer {
         "/foo": [Acts.session, Acts.auth],
         "/bar": [Acts.session ],
         "/api/v1/entries": [Acts.debugger],
-        "/api/v1/entries/:hoge": [Acts.hoge]
+      //        "/api/v1/entries/:hoge": [Acts.hoge]
     ]
 
-    static func query(path:String) -> Response {
+    static func query(path: String) -> Response {
 
         let router = Router(routemap: ROUTE)
         let server = Server(router: router)
@@ -31,7 +31,7 @@ struct PseudoServer {
 
     private static func invoke(server: Server, path: String) -> Response {
         let req: Request = ["path": path]
-        return server.call(req, res: Response() );
+        return server.call(req, res: Response() )
     }
 
 
@@ -62,24 +62,24 @@ struct PseudoServer {
 
     typealias RouteMap = [String : [Responsible]]
 
-    typealias Responsible = (Request,Response) -> Response
+    typealias Responsible = (Request, Response) -> Response
 
-    typealias Request = Dictionary<String,String>
+    typealias Request = Dictionary<String, String>
 
     /* ----------------------------------------------- */
 
     class Response {
 
         // TODO : wrap primitive response type
-        var header : [String]
-        var payload : [String]
+        var header: [String]
+        var payload: [String]
 
         convenience init() {
             self.init(header: [""], payload: [""])
         }
 
         init(header: [String], payload: [String]) {
-            (self.header,self.payload) = (header,payload)
+            (self.header, self.payload) = (header, payload)
         }
 
         func header(header: String...) -> Response {
@@ -106,7 +106,7 @@ struct PseudoServer {
 
         init(funcs: [ Responsible ] ) { stack = funcs }
 
-        func handle(req: Request, res:Response) -> Response{
+        func handle(req: Request, res: Response) -> Response {
             return MiddleWare.reduce(self.stack, req: req, res: res)
         }
 
@@ -114,7 +114,7 @@ struct PseudoServer {
             self.stack += [fn]
         }
 
-        static func reduce(stack: [Responsible], req: Request, res:Response) -> Response{
+        static func reduce(stack: [Responsible], req: Request, res: Response) -> Response {
 
             if stack.count == 1 {
                 let first = stack.first!
@@ -147,7 +147,7 @@ struct PseudoServer {
             }
         }
 
-        func handle(req: Request, res: Response)-> Response {
+        func handle(req: Request, res: Response) -> Response {
             if let path = req["path"] {
                 if let middle = self.route[path] {
                     return middle.handle(req, res: res)
@@ -169,7 +169,7 @@ struct PseudoServer {
             self.router = router
         }
 
-        func call(req: Request,res: Response) -> Response {
+        func call(req: Request, res: Response) -> Response {
             print("in PseudoServer | Request:", req)
             return self.router.handle(req, res: res)
         }

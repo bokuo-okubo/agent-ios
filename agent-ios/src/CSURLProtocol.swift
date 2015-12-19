@@ -23,7 +23,7 @@ class CSURLProtocol: NSURLProtocol {
     }
 
     override static func canonicalRequestForRequest (request: NSURLRequest) -> NSURLRequest {
-        return request;
+        return request
     }
 
     /* instance methods */
