@@ -8,9 +8,18 @@
 ## Setup
 
 ```
+# this project uses swiftlint
 $ brew install swiftlint
+
 $ ./start.sh
     # => bundle install
     # => bundle exec pod install
     # => open xcode
+```
+
+
+## Test
+
+```
+$ ./test.sh
 ```

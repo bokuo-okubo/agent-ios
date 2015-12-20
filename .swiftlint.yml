@@ -24,6 +24,7 @@ line_length: 200
 
 excluded: # Lint対象から外すファイルのあるパスを記述
   - Pods
+  - playgrounds
 
 # クラスの行数
 type_body_length:
