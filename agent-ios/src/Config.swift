@@ -9,22 +9,14 @@
 import Foundation
 
 struct Config {
+  // this config struct is TEMPORARY
+  let hostName = "help.creativesurvey.com"
 
-    /*
-    * TODO : 拡張性のあるConfig設定考える
-    * - Dictionary? 型指定しないとあかん気がする
-    * - Yaml? Json? どちらにしてもスキーマを定義しないとダメ？
-    */
+  let jsCodeLocation = "http://localhost:8081/index.ios.bundle?platform=ios&dev=true" // no longer use
 
-    // this config struct is TEMPORARY
-    let hostName = "help.creativesurvey.com"
+  let moduleName = "ReactNativeWithPods"
 
-    let jsCodeLocation = "http://localhost:8081/index.ios.bundle?platform=ios&dev=true"
+  let localEntoryFile = "index"
 
-    let moduleName = "ReactNativeWithPods"
-
-    let localEntoryFile = "index"
-
-    let localDirName = "web"
-
+  let localDirName = "web"
 }

@@ -17,4 +17,4 @@ end
 
 target 'agent-ios' do main_pods end;
 target 'agent-iosTests' do testing_pods end;
-target 'agent-iosUITests' do testing_pods end;
+# target 'agent-iosUITests' do testing_pods end;
