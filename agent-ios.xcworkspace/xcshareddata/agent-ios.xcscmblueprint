@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C48A3FFE1E9113B71205ED394D5EA1B510457AC0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "03F44F4BDA375744C03C09A5C37A8D475313C87A" : 0,
+    "C48A3FFE1E9113B71205ED394D5EA1B510457AC0" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "80508E67-25EA-4DCE-81BF-7F5D826117E9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "03F44F4BDA375744C03C09A5C37A8D475313C87A" : "agent-ios\/lib\/Egg\/",
+    "C48A3FFE1E9113B71205ED394D5EA1B510457AC0" : "agent-ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "agent-ios",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "agent-ios.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bokuo-okubo\/Egg.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03F44F4BDA375744C03C09A5C37A8D475313C87A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bokuo-okubo\/agent-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C48A3FFE1E9113B71205ED394D5EA1B510457AC0"
+    }
+  ]
+}
