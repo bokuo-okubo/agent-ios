@@ -24,7 +24,7 @@ struct PseudoServer {
   
     static func query(path: String) -> Response {
   
-      let router = Router(routemap: ROUTE)
+      let router = CSRouter(routemap: ROUTE)
       let server = Server(router: router)
   
       return invoke(server, path: path)
@@ -130,43 +130,13 @@ struct PseudoServer {
   }
   /* ----------------------------------------------- */
 
-  class Router {
-    var route: [String: MiddleWare]
-
-    init(routemap: RouteMap) {
-      let mid = MiddleWare(funcs:[Acts.notFound])
-      self.route = ["*": mid]
-
-      routemap.forEach({ path, handlers in
-        register(path, handlers: handlers)
-      })
-    }
-
-    private func register(path: String, handlers: [Responsible]) {
-      if !self.route.keys.contains(path) {
-        self.route[path] = MiddleWare(funcs: handlers)
-      }
-    }
-
-    func handle(req: Request, res: Response) -> Response {
-      if let path = req["path"] {
-        if let middle = self.route[path] {
-          return middle.handle(req, res: res)
-        } else {
-          return res.payload("404 NOT FOUND")
-        }
-      } else {
-        return res.payload("BAD REQUEST")
-      }
-    }
-  }
 
   /* ----------------------------------------------- */
   class Server {
 
-    let router: Router
+    let router: CSRouter
 
-    init(router: Router) {
+    init(router: CSRouter) {
       self.router = router
     }
 
