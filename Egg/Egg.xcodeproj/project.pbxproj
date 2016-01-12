@@ -7,18 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		78025D3E1C2AB2BE00309E00 /* EggTestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78025D3D1C2AB2BE00309E00 /* EggTestBase.swift */; };
-		784909E61C2BA92100372287 /* lexer+StandardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784909E51C2BA92100372287 /* lexer+StandardTests.swift */; };
-		7872E4AA1C3B7EB300DD9D54 /* LexStrategies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7872E4A91C3B7EB300DD9D54 /* LexStrategies.swift */; };
-		787ABE301C30966300D61462 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787ABE271C30966300D61462 /* Result.swift */; };
+		78086E251C44DD5B002232E8 /* LexResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78086E241C44DD5B002232E8 /* LexResultTests.swift */; };
+		78086E271C44DDA1002232E8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78086E261C44DDA1002232E8 /* Result.swift */; };
+		78086E2B1C44EE70002232E8 /* LexType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78086E2A1C44EE70002232E8 /* LexType.swift */; };
+		784909E61C2BA92100372287 /* Lexer+StandardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784909E51C2BA92100372287 /* Lexer+StandardTests.swift */; };
+		787ABE301C30966300D61462 /* LexResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787ABE271C30966300D61462 /* LexResult.swift */; };
 		787ABE331C30966300D61462 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787ABE2B1C30966300D61462 /* Utils.swift */; };
 		787ABE391C3097CF00D61462 /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787ABE371C3097CF00D61462 /* Lexer.swift */; };
 		787ABE3A1C3097CF00D61462 /* Lexer+Standard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787ABE381C3097CF00D61462 /* Lexer+Standard.swift */; };
+		789DCC5E1C44AE18006BA086 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789DCC5D1C44AE18006BA086 /* Label.swift */; };
 		78B33B1D1C2C0479002D4DDE /* MockToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B33B1C1C2C0479002D4DDE /* MockToken.swift */; };
 		78B33B201C2C05C2002D4DDE /* CombinedLexerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B33B1E1C2C058B002D4DDE /* CombinedLexerTests.swift */; };
-		78B33B231C2C1AA2002D4DDE /* lexerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B33B211C2C163E002D4DDE /* lexerTests.swift */; };
+		78B33B231C2C1AA2002D4DDE /* LexerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B33B211C2C163E002D4DDE /* LexerTests.swift */; };
 		78B93F8C1C2AA15400924B6D /* Egg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B93F811C2AA15400924B6D /* Egg.framework */; };
 		78D0A40E1C3BDCCC00055C1C /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D0A40D1C3BDCCC00055C1C /* Token.swift */; };
+		78D20ADD1C43B4750074C44B /* TokenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D20ADC1C43B4750074C44B /* TokenTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,22 +35,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		78025D3D1C2AB2BE00309E00 /* EggTestBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EggTestBase.swift; sourceTree = "<group>"; };
-		784909E51C2BA92100372287 /* lexer+StandardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "lexer+StandardTests.swift"; sourceTree = "<group>"; };
-		7872E4A91C3B7EB300DD9D54 /* LexStrategies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LexStrategies.swift; sourceTree = "<group>"; };
+		78086E241C44DD5B002232E8 /* LexResultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LexResultTests.swift; sourceTree = "<group>"; };
+		78086E261C44DDA1002232E8 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		78086E2A1C44EE70002232E8 /* LexType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LexType.swift; sourceTree = "<group>"; };
+		784909E51C2BA92100372287 /* Lexer+StandardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Lexer+StandardTests.swift"; sourceTree = "<group>"; };
 		787ABE221C30966300D61462 /* Egg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Egg.h; sourceTree = "<group>"; };
 		787ABE241C30966300D61462 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		787ABE271C30966300D61462 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		787ABE271C30966300D61462 /* LexResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LexResult.swift; sourceTree = "<group>"; };
 		787ABE2B1C30966300D61462 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		787ABE371C3097CF00D61462 /* Lexer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lexer.swift; sourceTree = "<group>"; };
 		787ABE381C3097CF00D61462 /* Lexer+Standard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Lexer+Standard.swift"; sourceTree = "<group>"; };
+		789DCC5D1C44AE18006BA086 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		78B33B1C1C2C0479002D4DDE /* MockToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockToken.swift; sourceTree = "<group>"; };
 		78B33B1E1C2C058B002D4DDE /* CombinedLexerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinedLexerTests.swift; sourceTree = "<group>"; };
-		78B33B211C2C163E002D4DDE /* lexerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lexerTests.swift; sourceTree = "<group>"; };
+		78B33B211C2C163E002D4DDE /* LexerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LexerTests.swift; sourceTree = "<group>"; };
 		78B93F811C2AA15400924B6D /* Egg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Egg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B93F8B1C2AA15400924B6D /* EggTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EggTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B93F9D1C2AA22D00924B6D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78D0A40D1C3BDCCC00055C1C /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		78D20ADC1C43B4750074C44B /* TokenTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,14 +78,16 @@
 		787ABE211C30966300D61462 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				789DCC5D1C44AE18006BA086 /* Label.swift */,
 				78D0A40D1C3BDCCC00055C1C /* Token.swift */,
+				78086E261C44DDA1002232E8 /* Result.swift */,
+				787ABE271C30966300D61462 /* LexResult.swift */,
+				78086E2A1C44EE70002232E8 /* LexType.swift */,
 				787ABE371C3097CF00D61462 /* Lexer.swift */,
 				787ABE381C3097CF00D61462 /* Lexer+Standard.swift */,
 				787ABE221C30966300D61462 /* Egg.h */,
 				787ABE241C30966300D61462 /* Info.plist */,
-				787ABE271C30966300D61462 /* Result.swift */,
 				787ABE2B1C30966300D61462 /* Utils.swift */,
-				7872E4A91C3B7EB300DD9D54 /* LexStrategies.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -105,10 +113,11 @@
 		78B93F9B1C2AA22D00924B6D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				78025D3D1C2AB2BE00309E00 /* EggTestBase.swift */,
-				78B33B211C2C163E002D4DDE /* lexerTests.swift */,
-				784909E51C2BA92100372287 /* lexer+StandardTests.swift */,
 				78B33B1C1C2C0479002D4DDE /* MockToken.swift */,
+				78D20ADC1C43B4750074C44B /* TokenTests.swift */,
+				78086E241C44DD5B002232E8 /* LexResultTests.swift */,
+				78B33B211C2C163E002D4DDE /* LexerTests.swift */,
+				784909E51C2BA92100372287 /* Lexer+StandardTests.swift */,
 				78B33B1E1C2C058B002D4DDE /* CombinedLexerTests.swift */,
 				78B93F9D1C2AA22D00924B6D /* Info.plist */,
 			);
@@ -242,11 +251,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7872E4AA1C3B7EB300DD9D54 /* LexStrategies.swift in Sources */,
+				78086E271C44DDA1002232E8 /* Result.swift in Sources */,
 				78D0A40E1C3BDCCC00055C1C /* Token.swift in Sources */,
 				787ABE3A1C3097CF00D61462 /* Lexer+Standard.swift in Sources */,
-				787ABE301C30966300D61462 /* Result.swift in Sources */,
+				78086E2B1C44EE70002232E8 /* LexType.swift in Sources */,
+				787ABE301C30966300D61462 /* LexResult.swift in Sources */,
 				787ABE391C3097CF00D61462 /* Lexer.swift in Sources */,
+				789DCC5E1C44AE18006BA086 /* Label.swift in Sources */,
 				787ABE331C30966300D61462 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,10 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				784909E61C2BA92100372287 /* lexer+StandardTests.swift in Sources */,
+				784909E61C2BA92100372287 /* Lexer+StandardTests.swift in Sources */,
+				78086E251C44DD5B002232E8 /* LexResultTests.swift in Sources */,
 				78B33B1D1C2C0479002D4DDE /* MockToken.swift in Sources */,
-				78025D3E1C2AB2BE00309E00 /* EggTestBase.swift in Sources */,
-				78B33B231C2C1AA2002D4DDE /* lexerTests.swift in Sources */,
+				78D20ADD1C43B4750074C44B /* TokenTests.swift in Sources */,
+				78B33B231C2C1AA2002D4DDE /* LexerTests.swift in Sources */,
 				78B33B201C2C05C2002D4DDE /* CombinedLexerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

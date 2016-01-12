@@ -5,6 +5,9 @@
       location = "group:agent-ios.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Egg/Egg.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
