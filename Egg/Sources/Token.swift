@@ -83,11 +83,11 @@ public struct Token: Tokenable {
   }
 
   public static func create(value value: String) -> Token {
-    return Token(label: Atom(key: value), value: value)
+    return Token(label: Label(name: LabelTypes.ATOM, key: value), value: value)
   }
 
   public static func create() -> Token {
-    return Token(label: Empty(), value: "")
+    return Token(label: Label(name: LabelTypes.EMPTY), value: "")
   }
 }
 

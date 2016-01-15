@@ -45,21 +45,3 @@ public struct Label: Labelable {
     self.key = ""
   }
 }
-
-public struct Atom: Labelable {
-
-  public let name = LabelTypes.ATOM
-  public let key: String //valueと一緒
-  public init(name _: String, key: String) {
-    self.key = key
-  }
-
-  public init(key: String) {
-    self.key = key
-  }
-}
-
-public struct Empty: Labelable {
-  public let name = LabelTypes.EMPTY
-  public let key  = ""
-}
