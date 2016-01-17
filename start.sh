@@ -1,5 +1,6 @@
 #!/bin/sh
 
+project_contain_dir=app
 project_name=agent-ios
 bundle_path=vendor/bundle
 
@@ -28,5 +29,6 @@ if [ ! -e $bundle_path ]; then
 fi
 
 ## install pods
+cd $project_contain_dir
 invoke "bundle exec pod install"
 invoke "open $project_name.xcworkspace/"
