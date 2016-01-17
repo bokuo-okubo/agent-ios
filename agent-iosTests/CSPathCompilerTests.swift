@@ -32,7 +32,7 @@ class CSPathCompilerTests: XCTestCase {
     let expectVals = ["/api", "/v1", "/entries", "/123", "/assess"]
     let expectNames = [path, param, path, param, path]
 
-    for (token, expect) in zip(result.data, expectVals){
+    for (token, expect) in zip(result.data, expectVals) {
       XCTAssertEqual(token.value, expect)
     }
 

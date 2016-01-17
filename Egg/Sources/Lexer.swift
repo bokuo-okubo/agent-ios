@@ -72,7 +72,7 @@ private func isEqualString(target: String, symbol: String, cursor: Int) -> Bool 
  - parameter method: Lexing = (target: String, cursor: Int) -> LexResult 生成されるlexerが行う処理の本体
  - target: String 実際に読みにいく生の文字列
  - cursor: Int 現在読んでいるsrcの位置.次のlexerに渡す.
- - returns:
+ - returns: Lexable
  */
 public struct Lexer<Result: LexResultable>: Lexable {
 

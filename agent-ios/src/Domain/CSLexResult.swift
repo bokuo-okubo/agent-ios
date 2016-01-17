@@ -48,8 +48,7 @@ struct CSLexResult: Egg.LexResultable {
         break
       }
     }
-
-    return self.init(isSuccess: isSuccess, target: target, index: index, data: data, params: rtnParams)
+    return CSLexResult(isSuccess: isSuccess, target: target, index: index, data: data, params: rtnParams)
   }
 
   static func trueResult(target: String, index: Int, data: [Content]) -> CSLexResult {

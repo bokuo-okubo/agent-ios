@@ -30,9 +30,7 @@ class LexerTests: XCTestCase {
   }
 
 
-  // TODO : very tmp
-  // -> やってることは結局concat. concatの名前をちゃんと考える
-  func testNewToken() {
+  func testUnifyToken() {
     let idLexer = $.create("/:id")
     let idToken = idLexer.unify(name: "PARAM")
 
