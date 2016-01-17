@@ -5,10 +5,10 @@
       location = "group:agent-ios.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Egg/Egg.xcodeproj">
+      location = "group:../libs/RoutesCompiler/RoutesCompiler.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:RoutesCompiler/RoutesCompiler.xcodeproj">
+      location = "group:../libs/Egg/Egg.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
