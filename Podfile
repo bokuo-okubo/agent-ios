@@ -6,13 +6,10 @@ use_frameworks!
 
 def main_pods
   pod 'Realm' ## client data store library
-  pod 'Dollar' ## extend swift like lodash.js
 end
 
 def testing_pods
   pod 'Realm/Headers'
-  pod 'Quick', '~> 0.8.0'
-  pod 'Nimble', '3.0.0'
 end
 
 target 'agent-ios' do main_pods end;
